@@ -1,47 +1,100 @@
+import { useEffect, useState } from "react";
+
 import PokemonCard from "../components/PokemonCard";
+
+import { getPokemons } from "../services/pokemonService";
 
 
 function Home() {
 
-    const pokemons = [
-        {
-            name: "Pikachu",
-            type: "Electrico",
-            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-        },
 
-        {
-            name: "Charmander",
-            type: "Fuego",
-            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-        }
+    const [pokemons, setPokemons] = useState([]);
 
-    ]
+
+    const [loading, setLoading] = useState(true);
+
+
+
+    useEffect(() => {
+
+
+        loadPokemon();
+
+
+    }, []);
+
+
+
+    const loadPokemon = async () => {
+
+
+        const data = await getPokemons();
+
+
+        setPokemons(data);
+
+
+        setLoading(false);
+
+
+    }
+
+
+
+    if (loading) {
+
+        return <h2>Cargando pokemons...</h2>
+
+    }
+
 
 
     return (
 
-        <div>
-
-            <h1>Pokedex</h1>
+        <div className="container mt-4">
 
 
-            <div className="d-flex">
+            <h1>
+                🎮 Pokédex
+            </h1>
+
+
+
+            <div className="row">
+
 
                 {
+
                     pokemons.map(pokemon => (
 
-                        <PokemonCard
 
-                            name={pokemon.name}
-                            type={pokemon.type}
-                            image={pokemon.image}
+                        <div
+                            className="col-md-3"
+                            key={pokemon.id}
+                        >
 
-                        />
+
+                            <PokemonCard
+
+
+                                name={pokemon.name}
+
+                                image={pokemon.image}
+
+                                type={pokemon.type}
+
+
+                            />
+
+
+                        </div>
+
 
                     ))
 
+
                 }
+
 
 
             </div>
@@ -49,8 +102,11 @@ function Home() {
 
         </div>
 
+
     )
 
+
 }
+
 
 export default Home;

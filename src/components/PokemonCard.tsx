@@ -1,8 +1,12 @@
 
+interface pokInter {
+    name: string,
+    image: string,
+    type: string
+}
 
-
-function PokemonCard({ name, image, type }: any) {
-
+function PokemonCard({ name, image, type }: pokInter) {
+ 
     return (
 
         <div className="card m-2">
