@@ -2,11 +2,21 @@ import { useEffect, useState } from "react";
 
 import PokemonCard from "../components/PokemonCard";
 
-import { getPokemons } from "../services/pokemonService";
-
 
 function Home() {
 
+    const pokemonsHardCoded = [
+        {
+            name: "Pikachu",
+            type: "Electrico",
+            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+        },
+
+        {
+            name: "Charmander",
+            type: "Fuego",
+            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+        }];
 
     const [pokemons, setPokemons] = useState([]);
 
@@ -28,7 +38,7 @@ function Home() {
     const loadPokemon = async () => {
 
 
-        const data = await getPokemons();
+        const data = pokemonsHardCoded;
 
 
         setPokemons(data);
