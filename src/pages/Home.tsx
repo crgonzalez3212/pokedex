@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 
 import PokemonCard from "../components/PokemonCard";
 
+interface Pokemon {
+  id?: number;
+  name: string;
+  image: string;
+  type: string;
+}
 
 function Home() {
 
@@ -18,7 +24,7 @@ function Home() {
             image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
         }];
 
-    const [pokemons, setPokemons] = useState([]);
+    const [pokemons, setPokemons] = useState<Pokemon[]>([]);
 
 
     const [loading, setLoading] = useState(true);
