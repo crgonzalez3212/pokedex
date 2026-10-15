@@ -22,6 +22,11 @@ function Home() {
             name: "Charmander",
             type: "Fuego",
             image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+        },
+        {
+            name: "Cristian",
+            Type: "X",
+            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
         }];
 
     const [pokemons, setPokemons] = useState<Pokemon[]>([]);
