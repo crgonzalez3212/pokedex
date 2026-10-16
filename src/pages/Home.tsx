@@ -27,6 +27,11 @@ function Home() {
             name: "Cristian",
             type: "X",
             image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+        },
+        {
+            name: "Nicole V",
+            type: "Fuego",
+            image: "https://www.enter.co/wp-content/uploads/2019/06/image-1024x945.jpg"
         }];
 
     const [pokemons, setPokemons] = useState<Pokemon[]>([]);
