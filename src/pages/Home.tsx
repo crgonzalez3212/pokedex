@@ -25,7 +25,7 @@ function Home() {
         },
         {
             name: "Cristian",
-            Type: "X",
+            type: "X",
             image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
         }];
 
