@@ -25,9 +25,16 @@ function Home() {
         },
         {
             name: "Cristian",
-            Type: "X",
+            type: "X",
             image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-        }];
+        },
+        {
+            name: "Greninja - Andres Diaz",
+            type: "Agua",
+            image: "https://pokebase.app/pokemon-go/pokemon/ash-greninja.png"
+        }
+    
+    ];
 
     const [pokemons, setPokemons] = useState<Pokemon[]>([]);
 
