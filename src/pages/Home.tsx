@@ -24,10 +24,12 @@ function Home() {
             image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
         },
         {
-            name: "Cristian",
+            name: "Yohan",
             type: "X",
-            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-        }];
+            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+        }
+        
+    ];
 
     const [pokemons, setPokemons] = useState<Pokemon[]>([]);
 
