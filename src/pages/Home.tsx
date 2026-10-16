@@ -27,7 +27,14 @@ function Home() {
             name: "Cristian",
             type: "X",
             image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-        }];
+        },
+        {
+            name: "Jhoyner",
+            type: "Planta",
+            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        }
+    ];
+
 
     const [pokemons, setPokemons] = useState<Pokemon[]>([]);
 
