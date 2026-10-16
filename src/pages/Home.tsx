@@ -37,6 +37,11 @@ function Home() {
             name: "Tomas",
             type: "X",
             image: "https://i.pinimg.com/1200x/96/79/85/967985ca22b2b00b485eca2bd47295d2.jpg"
+        },
+        {
+            name: "Greninja - Andres Diaz",
+            type: "Agua",
+            image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/658_f2.png"
         }];
 
 
