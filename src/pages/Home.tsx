@@ -42,7 +42,15 @@ function Home() {
             name: "Greninja - Andres Diaz",
             type: "Agua",
             image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/658_f2.png"
-        }];
+
+
+
+        },
+        {
+            name: "Julian",
+            type: "X",
+            image: "https://www.nintendo.com/es-es/Noticias/2016/agosto/-Que-es-Pokemon-Descubre-el-fenomeno-Pokemon-en-este-articulo-dedicado-1128960.html?srsltid=AU7gw4XKXN6UmRRylBXNejf9EE5hk_RHN86L7OoM9SUTD_QhEey07aez"
+        },];
 
 
     const [pokemons, setPokemons] = useState<Pokemon[]>([]);
