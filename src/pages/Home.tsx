@@ -62,6 +62,12 @@ function Home() {
             name: "Julian",
             type: "X",
             image: "https://www.nintendo.com/es-es/Noticias/2016/agosto/-Que-es-Pokemon-Descubre-el-fenomeno-Pokemon-en-este-articulo-dedicado-1128960.html?srsltid=AU7gw4XKXN6UmRRylBXNejf9EE5hk_RHN86L7OoM9SUTD_QhEey07aez"
+        },
+
+        {
+            name: "Samuel Duarte",
+            type: "Agua",
+            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
         },];
 
 
